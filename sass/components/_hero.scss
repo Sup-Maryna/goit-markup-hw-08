@@ -1,0 +1,124 @@
+.hero {
+  display: flex;
+  align-items: center;
+  height: 400px;
+  background-color: $background-color;
+  text-align: center;
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from($gradient-color),
+      to($gradient-color)
+    ),
+    url(../images/mobile/studio/1x/hero-mob.jpg);
+  background-image: -o-linear-gradient($gradient-color, $gradient-color),
+    url(../images/mobile/studio/1x/hero-mob.jpg);
+  background-image: linear-gradient($gradient-color, $gradient-color),
+    url(../images/mobile/studio/1x/hero-mob.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (-webkit-min-device-pixel-ratio: 2),
+    screen and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from($gradient-color),
+        to($gradient-color)
+      ),
+      url(../images/mobile/studio/2x/hero-mob@2x.jpg);
+    background-image: -o-linear-gradient($gradient-color, $gradient-color),
+      url(../images/mobile/studio/2x/hero-mob@2x.jpg);
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/mobile/studio/2x/hero-mob@2x.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from($gradient-color),
+        to($gradient-color)
+      ),
+      url(../images/tablet/studio/1x/hero-tab.jpg);
+    background-image: -o-linear-gradient($gradient-color, $gradient-color),
+      url(../images/tablet/studio/1x/hero-tab.jpg);
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/tablet/studio/1x/hero-tab.jpg);
+  }
+
+  @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 768px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 768px) and (min-resolution: 192dpi),
+    screen and (min-width: 768px) and (min-resolution: 2dppx) {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from($gradient-color),
+        to($gradient-color)
+      ),
+      url(../images/tablet/studio/2x/hero-tab@2x.jpg);
+    background-image: -o-linear-gradient($gradient-color, $gradient-color),
+      url(../images/tablet/studio/2x/hero-tab@2x.jpg);
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/tablet/studio/2x/hero-tab@2x.jpg);
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 600px;
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from($gradient-color),
+        to($gradient-color)
+      ),
+      url(../images/desktop/studio/1x/hero-desk.jpg);
+    background-image: -o-linear-gradient($gradient-color, $gradient-color),
+      url(../images/desktop/studio/1x/hero-desk.jpg);
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/desktop/studio/1x/hero-desk.jpg);
+  }
+
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (-o-min-device-pixel-ratio: 2/1),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: -webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        from($gradient-color),
+        to($gradient-color)
+      ),
+      url(../images/desktop/studio/2x/hero-desk@2x.jpg);
+    background-image: -o-linear-gradient($gradient-color, $gradient-color),
+      url(../images/desktop/studio/2x/hero-desk@2x.jpg);
+    background-image: linear-gradient($gradient-color, $gradient-color),
+      url(../images/desktop/studio/2x/hero-desk@2x.jpg);
+  }
+}
+
+.hero__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.615;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.363;
+  }
+}

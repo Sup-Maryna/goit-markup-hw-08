@@ -1,0 +1,27 @@
+.logo {
+  display: block;
+  font-family: $accent-font;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.174;
+  color: $black-color;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+.logo--padding {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+.logo--margin-color {
+  margin-bottom: 20px;
+  color: $white-color;
+}
+.logo__text {
+  color: $active-color;
+}

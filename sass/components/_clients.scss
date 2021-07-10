@@ -1,0 +1,46 @@
+.clients {
+  margin-left: calc(-1 * #{$size-gap});
+  margin-bottom: calc(-1 * #{$size-gap});
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.clients__item {
+  margin-left: $size-gap;
+  margin-bottom: $size-gap;
+  flex-basis: calc(100% / 2 - #{$size-gap});
+  @media screen and (min-width: 768px) {
+    flex-basis: calc(100% / 3 - #{$size-gap});
+    margin-left: $size-gap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 6 - #{$size-gap});
+    margin-left: $size-gap;
+  }
+}
+
+.clients__link {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  width: 100%;
+  height: auto;
+  border: 1px solid $color-svg;
+  border-radius: 4px;
+  color: $color-svg;
+  transition: border $animation;
+  &:hover,
+  &:focus {
+    color: $active-color;
+    border: 1px solid $active-color;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+  transition: fill $animation;
+  &:hover,
+  &:focus {
+    fill: currentColor;
+  }
+}

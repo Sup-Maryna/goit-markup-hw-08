@@ -1,0 +1,54 @@
+.menu {
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.menu--margin {
+  @media screen and (min-width: 768px) {
+    margin-left: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.menu__item {
+  position: relative;
+  .menu & + & {
+    margin-left: 50px;
+  }
+}
+
+.menu__link {
+  display: block;
+  padding: 32px 0;
+  color: inherit;
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  transition: color $animation;
+  &:hover,
+  &:focus {
+    color: $active-color;
+  }
+}
+.menu__link--color {
+  color: $active-color;
+}
+.menu__link--position::after {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  content: "";
+  width: 100%;
+  border: 2px solid $active-color;
+  border-radius: 2px;
+  @media screen and (min-width: 768px) {
+    bottom: -2px;
+  }
+  @media screen and (min-width: 1200px) {
+    bottom: -6px;
+  }
+}
