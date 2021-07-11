@@ -57,6 +57,7 @@
   width: 100%;
   @media screen and (min-width: 768px) {
     width: 50%;
+    margin-bottom: 0;
   }
   @media screen and (min-width: 1200px) {
     width: auto;
@@ -97,7 +98,7 @@
   padding-top: 15px;
   padding-bottom: 15px;
   vertical-align: bottom;
-  width: 358px;
+  width: 100%;
   height: 50px;
   color: $white-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -111,5 +112,8 @@
     line-height: 1.25;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+  }
+  @media screen and (min-width: 768px) {
+    width: 358px;
   }
 }
